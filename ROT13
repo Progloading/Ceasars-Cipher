@@ -12,6 +12,8 @@ function rot13(str) {
   }
   
   str = str.toUpperCase();
+  //var regex = "";
+  //regex = regex.replace(/[^!]/g, "");
   var decoded = '';
   for(var step = 0; step < str.length; step++)
   {
@@ -32,11 +34,13 @@ function rot13(str) {
 }
 
 console.log(rot13("SERR CVMMN"));
-console.log(rot13("JR NER OYBJA"));
+console.log(rot13("FGNAGBA CYBG SBHE. PBZR NYBAR"));
+console.log(rot13("JR NER OYBJA! OHEA RIRELGUVAT"));
 
 
 
-OUTPUT:
-===================================================================================
+OUTPUT
+===========================================================
 FREE PIZZA
-WE ARE BLOWN
+STANTON PLOT FOURundefined COME ALONE
+WE ARE BLOWN! BURN EVERYTHING
