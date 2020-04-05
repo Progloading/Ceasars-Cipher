@@ -33,10 +33,12 @@ function rot13(str) {
 
 console.log(rot13("SERR CVMMN"));
 console.log(rot13("JR NER OYBJA"));
+console.log(rot13("SERR"));
 
 
 
 OUTPUT:
 ===================================================================================
+FREE
 FREE PIZZA
 WE ARE BLOWN
