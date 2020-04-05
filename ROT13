@@ -10,8 +10,26 @@ function rot13(str) {
     V: 'I', W: 'J', X: 'K',
     Y: 'L', Z: 'M'    
   }
+  
+  str = str.toUpperCase();
+  var decoded = '';
+  for(var step = 0; step < str.length; step++)
+  {
+    if(str[step] === " ")
+    {
+      decoded += " ";
+    }else
+    {
+      decoded += decode_key[str[step]];
+    }
+  }
 
-  return str;
+  return decoded;
 }
 
-console.log(rot13("SERR PBQR PNZC");
+console.log(rot13("SERR PBQR PNZC"));
+
+
+OUTPUT:
+===================================================================================
+FREE CODE CAMP
