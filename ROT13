@@ -18,6 +18,10 @@ function rot13(str) {
     if(str[step] === " ")
     {
       decoded += " ";
+    }else if(str[step] == "!")
+    {
+      decoded += "!";
+      continue;
     }else
     {
       decoded += decode_key[str[step]];
@@ -27,9 +31,12 @@ function rot13(str) {
   return decoded;
 }
 
-console.log(rot13("SERR PBQR PNZC"));
+console.log(rot13("SERR CVMMN"));
+console.log(rot13("JR NER OYBJA"));
+
 
 
 OUTPUT:
 ===================================================================================
-FREE CODE CAMP
+FREE PIZZA
+WE ARE BLOWN
