@@ -12,16 +12,16 @@ function rot13(str) {
   }
   
   str = str.toUpperCase();
-  var decoded = '';
+  var regex = str.replace(/[^..!$]/g, "");
+  var decoded = " ";
   for(var step = 0; step < str.length; step++)
   {
-    if(str[step] === " ")
+    if(str[step] === regex)
+    {
+      decoded += regex;
+    }else if(str[step] === " ")
     {
       decoded += " ";
-    }else if(str[step] == "!")
-    {
-      decoded += "!";
-      continue;
     }else
     {
       decoded += decode_key[str[step]];
@@ -31,14 +31,21 @@ function rot13(str) {
   return decoded;
 }
 
-console.log(rot13("SERR CVMMN"));
-console.log(rot13("JR NER OYBJA"));
-console.log(rot13("SERR"));
+
+console.log("1THE2_2SHANK1: " + rot13(" FGNAGBA CYBG SBHE. PBZR NYBAR"));
+console.log("f-society:\t" + rot13("V JVYY OR GURER."))
+console.log("1THE2_2SHANK1: " + rot13(" JR NER OYBJA! OHEA RIRELGUVAT"));
+console.log("f-society:\t" + rot13("VZCBFFVOYR! UNQ GB OHT. FREIREF UNIR ORRA EREBHGRQ. UNEQ QEVIRF JVCRQ."));
+
+
 
 
 
 OUTPUT:
 ===================================================================================
-FREE
-FREE PIZZA
-WE ARE BLOWN
+1THE2_2SHANK1:   STANTON PLOT FOUR. COME ALONE
+f-society:	     I WILL BE THERE.
+1THE2_2SHANK1:   WE ARE BLOWN! BURN EVERYTHING
+f-society:	     IMPOSSIBLEundefined HAD TO BUGundefined SERVERS HAVE BEEN REROUTEDundefined HARD DRIVES WIPEDundefined
+
+
