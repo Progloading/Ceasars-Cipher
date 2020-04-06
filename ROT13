@@ -31,7 +31,7 @@ function rot13(str) {
   return decoded;
 }
 
-
+console.log();
 console.log("1THE2_2SHANK1: " + rot13(" FGNAGBA CYBG SBHE. PBZR NYBAR"));
 console.log("f-society:\t" + rot13("V JVYY OR GURER."))
 console.log("1THE2_2SHANK1: " + rot13(" JR NER OYBJA! OHEA RIRELGUVAT"));
