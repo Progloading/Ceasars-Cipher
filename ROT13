@@ -9,7 +9,7 @@ function rot13(str) {
     S: 'F', T: 'G', U: 'H',
     V: 'I', W: 'J', X: 'K',
     Y: 'L', Z: 'M'    
-  }
+  } //rewrite to account for punctuation
   
   str = str.toUpperCase();
   var regex = str.replace(/[^..!$]/g, "");
@@ -35,7 +35,7 @@ console.log();
 console.log("1THE2_2SHANK1: " + rot13(" FGNAGBA CYBG SBHE. PBZR NYBAR"));
 console.log("f-society:\t" + rot13("V JVYY OR GURER."))
 console.log("1THE2_2SHANK1: " + rot13(" JR NER OYBJA! OHEA RIRELGUVAT"));
-console.log("f-society:\t" + rot13("VZCBFFVOYR! UNQ GB OHT. FREIREF UNIR ORRA EREBHGRQ. UNEQ QEVIRF JVCRQ."));
+console.log("f-society:\t" + rot13("VZCBFFVOYR! UNQ GB OHT. FREIREF UNIR ORRA EREBHGRQ. UNEQ QEVIRF JVCRQ.")); 
 
 
 
